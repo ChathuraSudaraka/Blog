@@ -1,42 +1,27 @@
-#root {
-  max-width: 1280px;
-  margin: 0 auto;
-  padding: 2rem;
-  text-align: center;
-}
-
-.logo {
-  height: 6em;
-  padding: 1.5em;
-  will-change: filter;
-  transition: filter 300ms;
-}
-.logo:hover {
-  filter: drop-shadow(0 0 2em #646cffaa);
-}
-.logo.react:hover {
-  filter: drop-shadow(0 0 2em #61dafbaa);
-}
-
-@keyframes logo-spin {
-  from {
-    transform: rotate(0deg);
+/* Hide scrollbar for webkit browsers */
+/* This will hide the scrollbar when not interacting with it */
+::-webkit-scrollbar {
+    width: 8px; /* Set the width of the scrollbar */
   }
-  to {
-    transform: rotate(360deg);
+  
+  /* Track for webkit browsers */
+  ::-webkit-scrollbar-track {
+    background: white; /* Set the background color of the track */
   }
-}
-
-@media (prefers-reduced-motion: no-preference) {
-  a:nth-of-type(2) .logo {
-    animation: logo-spin infinite 20s linear;
+  
+  /* Handle for webkit browsers */
+  ::-webkit-scrollbar-thumb {
+    background: #888; /* Set the background color of the thumb */
+    border-radius: 4px; /* Round the corners of the thumb */
   }
-}
-
-.card {
-  padding: 2em;
-}
-
-.read-the-docs {
-  color: #888;
-}
+  
+  /* When hovering over the scrollbar */
+  ::-webkit-scrollbar-thumb:hover {
+    background: #555; /* Change the thumb color on hover */
+  }
+  
+  /* Scrollbar corner (between vertical and horizontal scrollbar) */
+  ::-webkit-scrollbar-corner {
+    background: #f1f1f1; /* Set the background color of the corner */
+  }
+  

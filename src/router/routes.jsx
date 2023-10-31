@@ -1,9 +1,9 @@
-import About from "../pages/About";
-import PostIdPage from '../pages/PostIdPage';
-import Posts from "../pages/Posts";
+import About from "../Pages/About";
+import BlogDetail from "../Pages/BlogDetail";
+import Home from "../Pages/Home";
 
 export const routes = [
-	{ path: '/about', component: <About />, exact: true },
-	{ path: '/posts', component: <Posts />, exact: true },
-	{ path: '/posts/:id', component: <PostIdPage />, exact: true },
-]
+  { path: "/", component: Home, exact: true },
+  { path: "/blog-detail/:id", component: BlogDetail, exact: true },
+  { path: "About", component: About, exact: true },
+];

@@ -1,7 +1,7 @@
 import React from "react";
-import Posts from "../pages/Posts";
 import { Routes, Route } from "react-router-dom";
-import { routes } from "../router/routes";
+import { routes } from "../router/routes"; // Import your route configuration here
+import Posts from "../Pages/BlogDetail"; // Correct the import path
 
 export default function AppRouter() {
   return (
@@ -9,7 +9,7 @@ export default function AppRouter() {
       {routes.map((route) => (
         <Route
           key={route.path}
-          element={route.component}
+          element={<route.component />} // Use JSX syntax to render the component
           path={route.path}
           exact={route.exact}
         />

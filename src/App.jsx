@@ -1,17 +1,18 @@
 import { useState } from "react";
 import "./App.css";
-import { BrowserRouter } from "react-router-dom";
-import Navbar from "./components/UI/Navbar";
-import AppRouter from "./components/AppRouter";
+import Footer from "./Components/Footer";
+import Header from "./Components/Header";
+import AppRouter from "./Components/Approutes";
 
 function App() {
   const [count, setCount] = useState(0);
 
   return (
-    <BrowserRouter>
-      <Navbar />
+    <>
+      <Header />
       <AppRouter />
-    </BrowserRouter>
+      <Footer />
+    </>
   );
 }
 
